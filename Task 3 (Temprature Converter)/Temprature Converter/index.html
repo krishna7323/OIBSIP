@@ -1,0 +1,80 @@
+<html>
+
+<head>
+    <title>Temperature Converter</title>
+</head>
+
+<body>
+    <script>
+        function myfunc() {
+            var temp = document.getElementById("id1").value;
+            var tem = parseFloat(temp)
+            var tempr = ((tem - 32) * 1.8);
+            alert("temperature in celsius is " + tempr)
+
+        }
+
+        function funmy() {
+            var temp1 = document.getElementById("id2").value;
+            var tem1 = parseFloat(temp1)
+            var tempr1 = ((tem1 - 32) * 1.8 + 273);
+            alert("temperature in kelvin is " + tempr1)
+
+        }
+    </script>
+    <style>
+        h1 {
+            margin-top: 100px;
+            font-size: 18px;
+        }
+    </style>
+    <center>
+        <p style="font-size: 25px;color:rgb(249, 252, 246)">Temperature Converter</p>
+    </center>
+
+
+    <body style="background-color: rgb(87, 70, 70)">
+    </body>
+    <center>
+        <h1>Fahrenheit to Celsius</h1>
+    </center>
+    <br>
+    <br>
+    <br>
+    <br>
+    <center><input id="id1" type="text" placeholder="Fahrenheit">
+        <input type="button" onclick="myfunc()" value="convert"></center>
+    <center>
+        <h1>Fahrenheit to kelvin</h1>
+    </center>
+    <br>
+    <br>
+    <br>
+    <center><input id="id2" type="text" placeholder="Fahrenheit">
+        <input type="button" onclick="funmy()" value="convert"></center>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+
+
+
+</html>
